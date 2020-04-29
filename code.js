@@ -21,12 +21,22 @@ function createTable() {
             let cell = document.createElement("td");
             cell.setAttribute("id", i + "_" + j);
             cell.setAttribute("class", "dead");
+            cell.onclick = callClickHandler;
             tr.appendChild(cell);
         }
         table.appendChild(tr);
     }
 
     gridContainer.appendChild(table);
+}
+
+function callClickHandler() {
+    let classes = this.getAttribute("class");
+    if (classes.indexOf('live') > -1) {
+        this.setAttribute("class", "dead");
+    } else {
+        this.setAttribute("class", "live");
+    }
 }
 
 // start everything
