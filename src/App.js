@@ -249,7 +249,7 @@ class App extends Component {
             <div>
                 <form onSubmit={this.resizeHandler}>
                     <label>
-                        Rows:
+                        Rows:&nbsp;
                         <input
                             name="newRows"
                             type="number"
@@ -258,7 +258,7 @@ class App extends Component {
                         />
                     </label>
                     <label>
-                        Cols:
+                        Cols:&nbsp;
                         <input
                             name="newCols"
                             type="number"
@@ -268,6 +268,9 @@ class App extends Component {
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>
+            </div>
+            <div>
+                ™ and © 1997-2023 Justin Lee. All Rights Reserved.
             </div>
         </div>);
     }
