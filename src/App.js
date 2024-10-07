@@ -187,7 +187,7 @@ export default function App() {
 
     function resizeHandler(event) {
         event.preventDefault();
-        alert('Resting Game with new cols ' + newRows + ', rows ' + newCols + '.');
+        alert('Resetting Game with new cols ' + newRows + ', rows ' + newCols + '.');
         let newGrid = new Array(newRows);
         let newNextGrid = new Array(newRows);
         for (let i = 0; i < newRows; i++) {
@@ -214,11 +214,11 @@ export default function App() {
 
     function changeReproductionHandler(event) {
         event.preventDefault();
-        alert('Resting Game with new reproduction time ' + reproductionTime + 'ms.');
+        alert('Resetting Game with new reproduction time ' + reproductionTime + 'ms.');
         clearTimeout(timer);
         playing = false;
         setReproductionTime(newReproductionTime);
-        setStartBtnText("start");
+        setStartBtnText("continue");
     }
 
     return (<div>
