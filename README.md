@@ -4,8 +4,8 @@ John Conway, inventor of the Game of Life, has died of COVID-19. In his honor I'
 
 ## Main Requirements
 
-> - node.js `v19.6.1`
-> - react.js `18.2.0`
+> - node.js `v22.9.0`
+> - react.js `18.3.1`
 
 ## Version
 
