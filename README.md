@@ -22,8 +22,8 @@ John Conway, inventor of the Game of Life, has died of COVID-19. In his honor I'
 Run the following code in the terminal to install and run the project.
 
 ```shell
-git https://github.com/realJustinLee/Game_of_Life.git
-cd Game_of_Lif
+git clone https://github.com/realJustinLee/Game_of_Life.git
+cd Game_of_Life
 
 cat>~/.env<<EOF
 REACT_APP_DEFAULT_ROWS=32
