@@ -1,37 +1,32 @@
-import {Component} from "react";
+import React from "react";
 
-class GameBoard extends Component {
-
-    render() {
-        const cells = this.props.grid.map((row, i) => {
-            const rowCells = row.map((cell, j) => {
-                return (
-                    <td
-                        key={"cell_" + i + "_" + j}
-                        onClick={() => this.props.onClick(i, j)}
-                        className={cell === 0 ? "dead" : "live"}
-                    />
-                );
-            });
-
+export default function GameBoard({grid, onClick}) {
+    const cells = grid.map((row, i) => {
+        const rowCells = row.map((cell, j) => {
             return (
-                <tr key={"row_" + i}>
-                    {rowCells}
-                </tr>
+                <td
+                    key={"cell_" + i + "_" + j}
+                    onClick={() => onClick(i, j)}
+                    className={cell === 0 ? "dead" : "live"}
+                />
             );
         });
 
-
         return (
-            <div id="gridContainer">
-                <table>
-                    <tbody>
-                    {cells}
-                    </tbody>
-                </table>
-            </div>
+            <tr key={"row_" + i}>
+                {rowCells}
+            </tr>
         );
-    }
-}
+    });
 
-export default GameBoard
+
+    return (
+        <div id="gridContainer">
+            <table>
+                <tbody>
+                {cells}
+                </tbody>
+            </table>
+        </div>
+    );
+}

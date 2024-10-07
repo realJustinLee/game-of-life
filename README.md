@@ -9,7 +9,7 @@ John Conway, inventor of the Game of Life, has died of COVID-19. In his honor I'
 
 ## Version
 
-- `0.1.0`
+- `1.0.0`
 
 ## Platform Compatibility
 
