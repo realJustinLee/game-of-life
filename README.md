@@ -25,7 +25,7 @@ Run the following code in the terminal to install and run the project.
 git clone https://github.com/realJustinLee/Game_of_Life.git
 cd Game_of_Life
 
-cat>~/.env<<EOF
+cat>./.env<<EOF
 REACT_APP_DEFAULT_ROWS=32
 REACT_APP_DEFAULT_COLS=32
 REACT_APP_DEFAULT_REPRODUCTION_TIME=100
