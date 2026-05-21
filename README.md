@@ -42,4 +42,4 @@ serve -s build
 
 # Made with ❤ by [Justin Lee](https://github.com/realJustinLee)!
 
-™ and © 1997-2023 Justin Lee. All Rights Reserved. [License Agreement](./LICENSE)
+™ and © 1997-2026 Justin Lee. All Rights Reserved. [License Agreement](./LICENSE)
